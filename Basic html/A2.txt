@@ -1,0 +1,9 @@
+Assignment
+
+Display the web page with “USER INFORMATION” as heading using the <h1> tag and include the following fields as the form fields:»First Name»Last Name»Address»Email ID»date of birth -Use date field
+
+Write HTML script to play audio file with controls and play the audio file as soon as the web page is loaded (Note: Use autoplay option)
+
+Write HTML script to play video file with controls and play the video file as soon as the web page is loaded (Use autoplay option). The video has to repeat playing once it stops (Use loop option)
+
+Write HTML script to display two circles (Use either Canvasor SVG)

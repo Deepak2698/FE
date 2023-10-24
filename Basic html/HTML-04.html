@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML - 04</title>
+    </head>
+    <body>
+        <!-- 
+            Colors
+                - Color Names
+                    - They are pre-defined color names for web.
+                    - standard color names.
+
+                - RGB Values
+                    - Three Light Sources - RED, GREEN, BLUE.
+                    - The value for each color shows the intensity.
+                    - Ranges from 0 to 255 value for each color.
+                    - Total Colors available:
+                        256 * 256 * 256 = 16777216 Possible Colors
+
+                - RGBA Values
+                    - Similar to RGB with an Alpha Value
+                    - Alpha value helps in bring the transparency in the color.
+                    - Alpha value is ranged in between of 0.0 to 1.0
+                    - Where 1.0 is stated to be solid color.
+                    - Where 0.0 is stated to be a transparent color.
+
+                - HEX Values
+                    - Very much similar to RGB values having the same concept of light sources.
+                    - It uses Hexa Decimal Values for representation.
+                    - Synatax
+                        #   -> defining the hexa values for represntation.
+                            Values will be for RED GREEN BLUE colors.
+                            Each color will be shown with a pair of digits.
+
+                            Red     -> 00
+                            Green   -> 00
+                            Blue    -> 00
+
+                            #000000 -> Black
+                            #ffffff -> White
+
+                - HSL Values    (hslpicker.com)
+                    - Stated for HUE, SATURATION, LIGHTNESS
+                    - HUE           -> represents the color shades in a range of values from 0 to 360.
+                    - Saturation    -> represents a particular color shade, ranges from 0 to 100 in percentage.
+                    - Lightness     -> represents the color to be light or dark, ranges from 0 to 100 in percentage.
+
+                - HSLA VAlues
+                    - Similar to HSL with an Alpha Value
+                    - Alpha value helps in bring the transparency in the color.
+                    - Alpha value is ranged in between of 0.0 to 1.0
+                    - Where 1.0 is stated to be solid color.
+                    - Where 0.0 is stated to be a transparent color.
+        -->
+
+        <p style="color: Red;">This is in RED by Color Name.</p>
+
+        <p style="color: rgb(255, 255, 255);">This is in RED by RGB Value.</p>
+
+        <p style="color: rgba(255, 0, 0, 0.3);">This is in RED by RGBA Value.</p>
+
+        <p style="color: #c0d6e4;">This is in RED by Hex Value.</p>
+
+        <p style="color: hsl(360, 100%, 50%);">This is in RED by HSL Value.</p>
+
+        <p style="color: hsla(360, 70%, 47%, 0.5);">This is in RED by HSLA Value.</p>
+
+
+        <hr>
+
+        
+            <!--
+                - A div tag is a container which can store multiple HTML elements.
+                - Also known as division tag.
+                - Supports nesting in HTML.
+                - It is a generic block level element.
+                    - It takes the whole row of the page.
+                    - It allows next new tags to sit on the new row only.
+                    - It accepts width and height customizations.
+            -->
+            <div style="background-color: darkorange;"> Block - 1 </div>
+            <div style="background-color: rgb(46, 29, 176);"> Block - 2 </div>
+            <div style="background-color: rgb(184, 219, 28);"> Block - 3 </div>
+
+        
+            <!--
+                - A span tag is a container which can store only text values.
+                - Does not supports nesting in HTML.
+                - It is a generic Inline element.
+                    - It takes the neccessary content part only.
+                    - It allows a new next tags to sit next to it, if space is available.
+                    - Cannot customize the width and height of the element.
+            -->
+            <span style="background-color: lightseagreen;"> Block - 01 </span>
+            <span style="background-color: rgb(117, 178, 32);"> Block - 02 </span>
+            <span style="background-color: rgb(181, 130, 35);"> Block - 03 </span>
+
+        </body>
+</html>
+
+<!--
+    Normal Number       Hex Decimal Number
+        0                       0
+        1                       1
+        2                       2
+        3                       3
+        4                       4
+        5                       5
+        6                       6
+        7                       7
+        8                       8
+        9                       9
+        10                      A
+        11                      B
+        12                      C
+        13                      D
+        14                      E
+        15                      F
+-->

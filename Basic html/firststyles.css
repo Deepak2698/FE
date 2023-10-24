@@ -1,0 +1,18 @@
+label {
+    color:green;
+}
+
+div {
+    background-color: yellow;
+    border: 1px solid black;
+    height: 100px;
+    width: 200px;
+    display: run-in;
+    /* background-image: url("./images/breakfast.png"); */
+}
+
+body {
+    background-color: #ffb6c1;
+    background-image: url("./images/lunch.png");
+    background-attachment: scroll;
+}

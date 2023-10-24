@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>HTML-05</title>
+
+        <style>
+            table,td,th, tr {
+                border: 6px solid Blue;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Tables -->
+        <h3>Tables</h3>
+
+        <table style="width: 50%;"> <!-- start of a table -->
+            
+            <!-- Table Body -->
+            <tr>    <!-- Table Row -->
+                <th>    <!-- Table Heading -->
+                    Countries
+                </th>
+                <th>
+                    States
+                </th>
+                <th>
+                    Population
+                </th>
+            </tr>
+        
+            
+            <!-- Table Head -->
+            <tr>
+                <td>    <!-- Table Data -->
+                    India
+                </td>
+                <td>
+                    Maharashtra
+                </td>
+                <td>
+                    25,020
+                </td>
+            </tr>
+            <tr>
+                <td>    <!-- Table Data -->
+                    Australia
+                </td>
+                <td>
+                    Sydney
+                </td>
+                <td>
+                    18,500
+                </td>
+            </tr>
+            
+            <!-- Table Foot -->
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    2
+                </td>
+            
+            </tr>
+            
+        </table> <!-- end of a table -->
+
+        <hr>
+
+        <!--
+            Merging of cells :
+                - Rows
+                    - Rowspan   -> Merging number of row's cells
+
+                - Columns
+                    - Colspan   -> Merging number of column's cells
+        -->
+
+        <h4>Rowspan Example</h4>
+        <table style="width: 50%;">
+            <tbody>
+               
+
+                <tr>
+                    <td>Value</td>
+                    
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Value</td>
+                    <td rowspan="2">Value</td>  <!-- Merges the 2 row's cell -->
+                    <td>Value</td>
+                </tr>
+
+                <tr>
+                    <td>Value</td>
+                    <td>Value</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h4>Colspan Example</h4>
+        <table style="width: 50%;">
+            <tbody>
+                <tr>
+                    <td>Value</td>
+                    <td>Value</td>
+                    <td>Value</td>
+                </tr>
+
+                
+                <tr>
+                    <td>Value</td>
+                    <td>Value</td>
+                    <td>Value</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Value</td> <!-- Merging 2 collumn's cells -->
+                    
+                </tr>
+
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Lists</h3>
+        <!-- 
+            LISTS 
+                - Turning the data elements into a listing part.
+                - Types of List
+                    - Ordered List
+                    - Unordered List
+                    - Description List
+        -->
+
+        <h4>Ordered List</h4>
+        <!--
+            - An Ordered list is a type of List
+            - It carries the data elements in an Ordered format.
+            - Denoted by Alphabets, Numbers.
+        -->
+
+        <ol>    <!-- Ordered List -->
+            <li>HTML</li>   <!-- List -->
+            <li>CSS</li>
+            <li>Js</li>
+        </ol>
+
+        <ol type="A">    <!-- Ordered List -->
+            <li>HTML</li>   <!-- List -->
+            <li>CSS</li>
+            <li>Js</li>
+        </ol>
+
+        <h4>Unordered List</h4>
+        <!--
+            - An Unordered list is a type of List
+            - It carries the data elements in an Unordered format.
+            - Denoted by Bullets.
+        -->
+
+        <ul>    <!-- Unordered List -->
+            <li>HTML</li>   <!-- List -->
+            <li>CSS</li>
+            <li>Js</li>
+        </ul>
+
+        <ul style="list-style-type: square;">    <!-- Unordered List -->
+            <li>HTML</li>   <!-- List -->
+            <li>CSS</li>
+            <li>Js</li>
+        </ul>
+
+        <h4>Description List</h4>
+        <!--
+            - An Description list is a type of List
+            - It carries the data elements in an Description format.
+            - It Provides a description for all the terms/ names.
+        -->
+
+        <dl>    <!-- Description List -->
+            <dt>HTML</dt>   <!-- Description Term (name) -->
+                <dd>Hyper Text Markup Language</dd> <!-- Description Data -->
+            <dt>CSS</dt>
+                <dd>Cascading Style Sheet</dd>
+            <dt>Js</dt>
+                <dd>JavaScript</dd>
+        </dl>
+        
+        <hr>
+
+        <h3> IFrames </h3>
+        <!--
+            iframe:
+                - Creating a small window to represent any other web page/ maps, videos etc..
+        -->
+
+        <iframe src="./HTML-04.html" height="300px" width="400px" title="Example"></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2brngSdfUDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14745.505614327036!2d88.34524070640863!3d22.490056622822596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0270dd798eb483%3A0xa8530946abc7e6fe!2sRoyal%20Calcutta%20Golf%20Club!5e0!3m2!1sen!2sin!4v1689523316511!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </body>
+</html>
