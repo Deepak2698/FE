@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input</title>
+
+        <link rel="stylesheet" href="example.css">
+    </head>
+    <body>
+        <form action="./html_form.html" novalidate>
+            <!--
+                NOVALIDATE attribute specifies that the form data should not be validated when submitted.
+            -->
+            
+            <label for="name">First name:</label>
+            <input type="text" id="name" autocomplete="off"> <br><br>
+            <!--
+                Autocomplete attribute allows the browser to predict the value, when a user starts to type in the respective field.
+                Autofill in the input field, based on earlier typed values.
+            -->
+
+            <label for="pass">Passwords</label>
+            <input type="password" id="pass" autofocus> <br><br>
+            <!--
+                AUTOFOCUS attribute specifies that the element should be automatically get focus when the page loads.
+            -->
+
+            <label for="appointment">Select a time</label>
+            <input type="time" id="appointment"> <br><br>
+            <!--
+                Type - time helps in inserting a proper time in the system.
+            -->
+
+            <label for="fav_color">Select a color</label>
+            <input type="color" id="fav_color"> <br><br>
+
+            <label for="email_id">Email</label>
+            <input type="email" id="email_id"> <br><br>
+
+            <label for="telephone">Telephone</label>
+            <input type="tel" id="telephone" required> <br><br>
+            <!--
+                Required attribute makes the field mandatory to be filled.
+            -->
+
+            <label for="profile_url">Profile URL</label>
+            <input type="url" id="profile_url"> <br><br>
+
+            <label for="resume">Upload Resume (Single)</label>
+            <input type="file" id="resume"> <br><br>
+
+            <label for="image">Upload Images (Multiple)</label>
+            <input type="file" id="image" multiple> <br><br>
+
+            <input type="submit">
+
+        </form>
+    </body>
+</html>

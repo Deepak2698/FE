@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Graphics</title>
+    </head>
+    <body>
+        
+        <h3>Graphics</h3>
+
+        <!-- SVG tag -->
+        <svg>
+            <!--
+                - SVG (Scalable Vector Graphics) defines vector-based graphics in XML format.
+                - It defines a conatiner for graphical representation.
+            -->
+            <circle cx="50px" cy="50px" r="40px" />
+                <!--
+                    - cx    -> x coordinates (default value = 0)
+                    - cy    -> y coordinates (default value = 0)
+                    - r     -> radius of the circle
+                -->
+        </svg>
+
+        <svg>
+            <ellipse cx="90px" cy="60px" rx="80px" ry="50px" />
+                <!--
+                    - cx    -> x coordinates (default value = 0)
+                    - cy    -> y coordinates (default value = 0)
+                    - rx    -> horizontal radius
+                    - ry    -> vertical radius
+                -->
+        </svg>
+
+        <svg>
+            <rect height="90px" width="60px" />
+        </svg>
+
+        <!-- Canvas -->
+
+        <canvas width="200" height="100" style="border: 1px solid black;">
+
+        </canvas>
+
+        <hr>
+
+        <!-- Audio Tag -->
+
+        <audio controls autoplay loop muted>
+            <!--
+                - Audio Tag is used to play audio files/ contents/ strams.
+                - It supports: MP3, WAV, and OGG.
+                - Attributes:
+                    -> Controls : Provides Audio Controls
+                    -> Autoplay : Provides playing the audio as it is ready.
+                    -> Loop     : After finishing the audio it repeats to the beginning point.
+            -->
+            <source src="./Assets/audio/playing_in_color.mp3" type="audio/mpeg">
+                <!-- 
+                    Source tag is specified to link resouces related to video, audio and pictures.
+                -->
+        </audio>
+
+        <hr>
+
+        <!-- Video Tag -->
+        <video controls loop autoplay muted>
+            <!--
+                - A Video Tag is used to play video contents or streams.
+                - Video Format it supports
+                    - MP4
+                    - WebM
+                    - OGG
+                - Attributes:   
+                    - controls  : Video Controls
+                    - Loop      : After finishing the video it repeats to the beginning point.
+                    - Autoplay  : Video start whenever its completely loaded.
+                    - Muted     : Muted Audio when the video is played.
+            -->
+            <source src="./Assets/vid/Dubai.mp4" type="video/mp4">  <!-- Video Source -->
+            <track kind="captions" srclang="eng" label="English-sub" default src="./Assets/vid/subtitle.vtt">
+
+            <!--
+                - Track tag which is used to define the track of the video file.
+                - Used for specifying the subtitles or caption for the video.
+                - Needs the server, to run the track.
+            -->
+
+        </video>
+
+        <hr>
+
+        <embed type="image/jpg" src="./Assets/img/coffee.png" width="300">
+        <embed type="text/html" src="./html_form.html" height="300">
+        <embed type="video/webm" src="./Assets/vid/Dubai.mp4" height="300">
+
+            <!--
+                - Embed tag defines a container for an external resouces.
+                - Any browser which oes not supports java Applet, it can be replaced by embed tag.
+                - It gives a better usage in respective of different html tags.
+            -->
+
+    </body>
+</html>

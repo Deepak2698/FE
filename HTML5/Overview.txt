@@ -1,0 +1,60 @@
+Module - 02
+
+HTML URL:   https://www.edureka.co/
+    - http  : Hyper Text Transfer Protocol
+    - https : Hyper Text Transfer Protocol - SECURE
+    - FTP   : File Transfer Protocol
+
+            http://127.0.0.1:5500/
+    - Host  : Who publishes the website
+    - DNS   : Domain Name System
+    - PORT  : Logical endpoints in a system
+
+            /classroom/presentation/161/1580/
+    - Path  : The location of a page, post, file or any asset.
+
+            filename.html
+    - File Name : An unique name of a page, post file or any asset, to target at the end location.
+
+HTML Framework:
+    - XHTML (XML + HTML)
+
+HTML5 :
+    - Documents
+        - Headers
+        - Article
+        - Footer
+        - Figure
+        - Figcaption
+        - Section
+        - Summary
+
+    - Form
+        - Select
+        - Datalist
+        - Keygen
+            - Used for generating random numbers
+            - HTML-5 it has been removed.
+        - Output
+
+    - Input
+        - time
+        - color
+        - email
+        - URL
+        - telephone
+        - file
+        - Attributes
+            - Novalidate
+            - Autocomplete
+            - AUTOFOCUS
+            - Required
+
+    - Graphics
+        - SVG
+            - Circle
+            - Ellipse
+            - Rectangle
+        - Audio
+        - Video
+        - Embed
